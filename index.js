@@ -12,11 +12,9 @@ mongoose.connect(DB, { useNewUrlParser: true }, { useUnifiedTopology: true }).th
   console.log(`connection successfull`);
 })
 
-const ALLOWED_CLIENTS = "http://localhost:3000,http://localhost:3300";
-
 // Cors 
 const corsOptions = {
-  origin: ALLOWED_CLIENTS.split(',')
+  origin: '*'
   // ['http://localhost:3000', 'http://localhost:5000', 'http://localhost:3300']
 }
 
